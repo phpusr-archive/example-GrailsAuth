@@ -137,3 +137,6 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/favicon.ico':                ['permitAll']
 ]
 
+grails.plugin.springsecurity.rememberMe.persistent = true
+grails.plugin.springsecurity.rememberMe.persistentToken.domainClassName = 'auth.PersistentLogins'
+
