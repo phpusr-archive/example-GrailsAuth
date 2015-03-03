@@ -122,6 +122,10 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'auth.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'auth.UserRole'
 grails.plugin.springsecurity.authority.className = 'auth.Role'
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/home'
+// Метод запроса для выхода из системы
+grails.plugin.springsecurity.logout.postOnly = false
+// Страница отображаемая после выхода из системы
+grails.plugin.springsecurity.logout.afterLogoutUrl = '/home'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
 	'/index':                         ['permitAll'],
