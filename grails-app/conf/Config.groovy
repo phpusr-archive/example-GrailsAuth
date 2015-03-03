@@ -121,6 +121,7 @@ log4j.main = {
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'auth.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'auth.UserRole'
 grails.plugin.springsecurity.authority.className = 'auth.Role'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/home'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
 	'/index':                         ['permitAll'],
