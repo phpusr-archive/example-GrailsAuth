@@ -9,12 +9,12 @@ import spock.lang.Specification
 @TestFor(Book)
 class BookSpec extends Specification {
 
-    def setup() {
+    void "testSave"() {
+        when: "Create book"
+        def book = new Book(title: 'Sample book', description: 'The best book ever!').save(failOnError: true)
+
+        then: "Book size must be 1"
+        Book.count == 1
     }
 
-    def cleanup() {
-    }
-
-    void "test something"() {
-    }
 }
