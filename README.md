@@ -10,7 +10,7 @@
 
 ## Контроллеры
 
-- HomeController - доступ по авторизации
-- PublicController - доступ всем
-- BookController - использоваля для демонстрации тестирования
+- **HomeController** - доступ по авторизации
+- **PublicController** - доступен всем
+- **BookController** - использоваля для демонстрации тестирования
 
