@@ -5,6 +5,8 @@ import auth.UserRole
 class BootStrap {
 
     def init = { servletContext ->
+        if (Role.findByAuthority('ROLE_ADMIN')) return
+
         def adminRole = new Role(authority: 'ROLE_ADMIN').save(failOnError: true)
         def userRole = new Role(authority: 'ROLE_USER').save(failOnError: true)
 
