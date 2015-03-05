@@ -14,3 +14,15 @@
 - **PublicController** - доступен всем
 - **BookController** - использоваля для демонстрации тестирования
 
+## Не работает
+
+**PersistentLogins** - запоминание авторизованных пользователей.
+
+Сохраняет информацию о входе пользователя в БД.
+
+Т.О. можно не проходить аутентификацию даже после того, как время сессии истечет.
+
+!!! Если удалить JSESSIONID, то происходит ошибка: *"HTTP Status 500 - Could not obtain current Hibernate Session; nested exception is org.hibernate.HibernateException: No Session found for current thread"*.
+
+Пробовал запускать и на Idea, и на сервере в режиме Develop и Production.
+

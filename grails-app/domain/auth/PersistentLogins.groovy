@@ -4,6 +4,7 @@ package auth
  * Сохраняет информацию о входе пользователя в БД
  * Т.О. можно не проходить аутентификацию даже после того, как время сессии истечет
  * !!! Если удалить JSESSIONID, то происходит ошибка (org.hibernate.HibernateException: No Session found for current thread)
+ * Пробовал запускать и на сервере в режиме Develop и Production
  */
 class PersistentLogins {
 
