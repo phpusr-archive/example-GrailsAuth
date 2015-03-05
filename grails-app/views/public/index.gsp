@@ -14,6 +14,9 @@
 
 <body>
     <p>Public controller</p>
+    <br/>
+
+    <p>${text}</p>
 </body>
 
 </html>
