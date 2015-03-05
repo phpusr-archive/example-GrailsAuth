@@ -22,7 +22,11 @@
 
 Т.О. можно не проходить аутентификацию даже после того, как время сессии истечет.
 
-!!! Если удалить JSESSIONID, то происходит ошибка: *"HTTP Status 500 - Could not obtain current Hibernate Session; nested exception is org.hibernate.HibernateException: No Session found for current thread"*.
+**!!!** Если удалить JSESSIONID, то происходит ошибка: *"HTTP Status 500 - Could not obtain current Hibernate Session; nested exception is org.hibernate.HibernateException: No Session found for current thread"*.
 
 Пробовал запускать и на Idea, и на сервере в режиме Develop и Production.
+
+Если отключить сохранение в БД, то эта штука работает. Тестировал удаляя JSESSIONID.
+
+После перезагрузки сервера сервера перелогниватья не нужно (используется кука, срок действия 14 дней, видимо кука содержит информацию о пользователе, после смены имени пользователя кука перестает работать).
 
